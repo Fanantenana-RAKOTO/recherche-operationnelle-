@@ -26,7 +26,7 @@ Ce projet a été fait dans le cadre d'un cours de recherche opérationnelle, av
 ## Installation
 
 ```bash
-git clone <url-du-repo>
+git clone https://github.com/Fanantenana-RAKOTO/recherche-operationnelle-.git
 cd bellman-kalaba
 npm install
 npm run dev
