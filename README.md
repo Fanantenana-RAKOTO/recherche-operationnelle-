@@ -45,6 +45,18 @@ L'application est ensuite disponible sur `http://localhost:5173`.
 
 Le résultat s'affiche dans le panneau du bas (valeur optimale + liste des chemins) et directement sur le graphe (les arcs et sommets du/des chemin(s) optimal(aux) sont mis en couleur).
 
+## Structure du projet
+
+```
+src/
+├── algorithms/   # logique pure de l'algorithme (aucune dépendance à React)
+├── components/   # composants d'interface
+├── context/      # thème clair/sombre
+├── hooks/        # état du graphe, redimensionnement
+├── styles/       # thème visuel
+└── utils/        # fonctions géométriques pour le canvas
+```
+
 Le fichier `algorithms/bellmanKalaba.js` peut être testé et réutilisé indépendamment de l'interface, si un jour on veut ajouter des tests unitaires ou réutiliser l'algo ailleurs.
 
 ## Limites connues
